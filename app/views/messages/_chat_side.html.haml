@@ -1,0 +1,19 @@
+.chat-side
+  .side-header
+    .side-header__box
+      %p.side-header__box__username 
+        Kim Jihyun
+      %ul.side-header__box__menu
+        %li.side-header__box__menu__new-group
+          = link_to "#" do
+            = icon('fas', 'edit')
+        %li.side-header__box__menu__edit-header__box__user
+          = link_to "#" do
+            = icon('fas', 'cog')
+  .groups
+    = link_to "#", class: "group" do
+      %p.group__group-name 
+        70期
+      %p.group__latest-message 
+        まだメッセージがありません
+        

@@ -1,0 +1,33 @@
+.chat-main
+  .main-header
+    .main-header__left-box
+      %h2.main-header__left-box__current-group 
+        70期
+      %ul.main-header__left-box__member-list
+        Member :
+        %li.main-header__left-box__member-list__member
+          hoge
+        %li.main-header__left-box__member-list__member
+          Kim Jihyun     
+    .main-header__edit-btn
+      = link_to "Edit"
+  .messages  
+    .message
+      .message__upper-info
+        %p.message__upper-info__talker
+          hoge
+        %p.message__upper-info__date
+          2020/03/09(Mon) 09:36:04
+      %p.message__text
+        Hello
+  .form
+    %form.new_message 
+      .input-box
+        %input{type:"text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit", class: "submit-btn", value: "Send"}
+
+
+        
