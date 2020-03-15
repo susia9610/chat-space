@@ -41,14 +41,16 @@
     padding: 20px 20px 0;
     .group {
       color: white;
-      text-decoration: none;
       margin-bottom: 40px;
+      text-decoration: none;
       &__group-name {
         font-size: 15px;
         margin-bottom: 5px;
+        color: white;
       }
       &__latest-message {
         font-size: 11px;
+        color: white;
       } 
     }
   }

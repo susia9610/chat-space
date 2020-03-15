@@ -11,9 +11,12 @@
           = link_to edit_user_path(current_user) do
             = icon('fas', 'cog', class: 'icon')
   .groups
-    = link_to "#", class: "group" do
-      %p.group__group-name 
-        70期
-      %p.group__latest-message 
-        まだメッセージがありません
+    - current_user.groups.each do |group| 
+      = link_to "#", class: "group" do
+        .group
+          %P.group__group-name 
+            = group.name
+          %p.group__latest-message 
+            まだメッセージがありません
         
+    
