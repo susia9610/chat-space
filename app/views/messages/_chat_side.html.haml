@@ -12,11 +12,11 @@
             = icon('fas', 'cog', class: 'icon')
   .groups
     - current_user.groups.each do |group| 
-      = link_to "#", class: "group" do
-        .group
-          %P.group__group-name 
+      .group     
+        = link_to group_messages_path(group) do
+          .group__group-name 
             = group.name
-          %p.group__latest-message 
-            まだメッセージがありません
+          .group__latest-message 
+            = group.show_last_message
         
     
