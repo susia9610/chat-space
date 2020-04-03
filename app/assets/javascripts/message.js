@@ -37,7 +37,6 @@ $(function () {
     })
       .done(function (data) {
         var html = buildHTML(data);
-        console.log(data)
         $('.messages').append(html);
         $('form')[0].reset();
         var height = $('.messages')[0].scrollHeight;
