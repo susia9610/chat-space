@@ -1,4 +1,3 @@
-hello
 # README
 * Database creation
 
